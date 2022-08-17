@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="traficsignals.css">
+</head>
+<body>
+    <div class="trafic-light-container">
+        <h1 class="trafic-light-heading text-center">Traffic Light</h1>
+        <div class="d-flex flex-row justify-content-center m-5">
+            <div class="d-flex flex-column">
+                <button id="stopButton" class="button" onclick="turnOnRed()">Stop</button>
+                <button id="readyButton" class="button" onclick="turnOnYellow()">Ready</button>
+                <button id="goButton" class="button" onclick="turnOnGreen()">Go</button>
+            </div>
+            <div class="trafic-light">
+                <div id="stopLight" class="bulb"></div>
+                <div id="readyLight" class="bulb"></div>
+                <div id="goLight" class="bulb"></div>
+            </div>
+        </div>
+    </div>
+
+<script src="traficsignals.js"></script>
+</body>
+</html>

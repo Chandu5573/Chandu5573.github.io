@@ -1,0 +1,30 @@
+.hello {
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size:x-large;
+}
+.Jane {
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size:xx-large;
+
+}
+
+.container {
+    background-color: #2d3a8c;
+    border: radius 50px;
+
+}
+.insidecont {
+    background-color: #ffffff; 
+    border-top: 30px;
+   
+}
+.main-heading{
+    font-family: "Roboto";
+    color: black;
+    font-size:x-large;
+    text-align: center;
+    
+
+}
