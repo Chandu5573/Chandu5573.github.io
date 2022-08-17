@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1 align="center">Transliteration</h1>
+  <article align="center" class="inputText">
+
+  </article>
+  <hr>
+  <div align="center" class="btn">
+    <button type="button" name="button">Transliterate</button>
+  </div>
+  <hr>
+  <article align="center" class="outputText">
+
+  </article>
+  <script>
+  document.querySelector("button").onclick = function(){
+    var txt1 = prompt("Enter input text");
+    var txt2 ="";
+
+    for(i=0; i<txt1.length;i++){
+        if(txt1.charCodeAt(i)>3071 && txt1.charCodeAt(i)<3201){
+            txt2 += String.fromCharCode(txt1.charCodeAt(i) - 768);
+        }else{
+            txt2 += String.fromCharCode(txt1.charCodeAt(i));
+        }
+    }
+
+    alert(txt2);
+
+    document.querySelector(".inputText").innerText = txt1;
+    document.querySelector(".outputText").innerText = txt2;
+  };
+
+  </script>
+</body>
+
+</html>
